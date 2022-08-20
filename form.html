@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">MUSIC CONCERT REGISTRATION</div>
+        <form name="RegForm" action="#" method="get">
+            <div class="circal-form">
+                <div class="circal-title">
+                    <label for="pre">PREFIX:</label>
+                    <select name="prefix" id="PREFIX">
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="ms">Ms</option>
+                        <option value="miss">Miss</option>
+                      </select>
+                </div><br>
+            <div class="card-details">
+                <div class="card-box">
+                    <span class="details" >FULL NAME:</span>
+                    <input type="text" name="FULLNAME" placeholder="Enter your full name">        
+                </div>
+                <div class="card-box">
+                    <span class="details">EMAIL:</span>
+                    <input type="email" name="EMAIL" placeholder="Enter your email">                         
+                </div>
+                <div class="card-box">
+                    <span class="details">PHONE NUMBER:</span>
+                    <input type="phone" name="PHONENUMBER" placeholder="Enter your phone number">                         
+                </div>
+                <div class="circal-form">
+                    <span  class="circal-title">GENDER:</span>
+                    <div class="category">
+                        <input type="radio"id="GENDER1" name="gender">Male
+                        <input type="radio"id="GENDER2" name="gender">Female
+                        <input type="radio"id="GENDER3" name="gender">Other
+                    </div><br>
+                    <div class="circal-form">
+                        <div class="circal-title">
+                            <label>SELECT YOUR CATEGORY:</label><br>
+                            <input type="checkbox" id="opt1" name="opt1" value="STAG">
+                            <label for="vehicle1">STAG</label><br>
+                            <input type="checkbox" id="opt2" name="opt2" value="COUPLE">
+                            <label for="vehicle2">COUPLE</label><br>
+                            <input type="checkbox" id="opt3" name="opt3" value="FEMALE">
+                            <label for="vehicle3">FEMALE</label><br><br>
+                            <div class="textarea">
+                                <textarea id="textarea:">leave your query....If any?</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <input id="btn" type="submit" value="Register">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

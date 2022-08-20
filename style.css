@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    color: rgb(245, 236, 236);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image.png);
+    padding: 10px;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    background: linear-gradient(500deg,#000);
+}
+.container .heading{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+form .card-details .card-box{
+    width: calc(100%2 -20px);
+    margin-bottom: 15px;
+}
+.card-details .card-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+.card-details .card-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #0b0b0b88;
+    padding-left: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    background: #f5f1f188
+
+}
+.card-details .card-box input:focus,
+.card-details .card-box input:valid{
+    border-color: #00000088;
+}
+form .circal-form .circal-title{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px;
+}
+form .button{
+    text-align: center;
+}
+form .button input{
+    padding: 10px 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color: rgb(17, 17, 17);
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius:5px;
+    letter-spacing: 1px;
+    background: #f5f1f188;
+}
+textarea{
+    width: 100%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid rgb(98, 92, 92);
+  border-radius: 4px;
+  background-color: #f5f1f188;
+  font-size: 16px;
+  resize: static;
+}
+form select{
+    color: rgb(70, 64, 64);
+    background-color: #f5f1f188;
+}
+
+
+
+
+
+
