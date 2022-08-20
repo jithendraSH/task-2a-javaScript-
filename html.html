@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script type="text/JavaScript" src="mom.js"></script>
+      <script type="text/JavaScript" src="mom.js" charset="UTF-8"></script>
+      <style type="text/css">
+         div {
+            margin-top: 16px!important;
+            margin-bottom: 16px!important;
+            width:100%;
+         }
+         table, td {
+            border: 1px solid #F1E8E8;
+            border-collapse: collapse;
+            padding: 4px;
+         }
+         table tr:nth-child(odd) {
+            background-color: #CFCACA;
+         }
+         table tr:nth-child(even) {
+            background-color: #C4B4B4;
+         }
+      </style>
+   </head>
+   
+   <body>
+      <div >
+         Select Locale : <select id="locale" onchange="updatelocale()" style="width:200px;">
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="fr-ca">French Canada</option>
+            <option value="cs">Czech</option>
+            <option value="zh-cn">Chinese</option>
+            <option value="nl">Dutch<   /option>
+            <option value="ka">Georgian</option>
+            <option value="he">Hebrew</option>
+            <option value="hi">Hindi</option>
+            <option value="id">Indonesian</option>
+            <option value="it">Italian</option>
+            <option value="jv";Japanese</option>
+            <option value="ko";Korean</option>
+         </select>
+      </div>
+      <br/>
+      <br/>>
+      Display Date is different formats as per locale :<span id="localeid"></span><br/>
+      <div>
+         <table>
+            <tr>
+               <th>Format</th>
+               <th>Display</th>
+            </tr>
+            <tr>
+               <td><i>dddd, MMMM Do YYYY, h:mm:ss a</i></td>
+               <td>
+                  <div id="ldate"></div>
+               </td>
+            </tr>
+            <tr>
+               <td><i>LLLL</i></td>
+               <td>
+                  <div id="ldate1"></div>
+               </td>
+            </tr>
+            <tr>
+               <td><i>moment().format()</i></td>
+               <td>
+                  <div id="ldate2"></div>
+               </td>
+            </tr>
+            <tr>
+               <td><i>moment().calendar()</i></td>
+               <td>
+                  <div id="ldate3"></div>
+               </td>
+            </tr>
+            <tr>
+               <td><i>Months</i></td>
+               <td>
+                  <div id="ldate4"></div>
+               </td>
+            </tr>
+            <tr>
+               <td><i>Weekdays</i></td>
+               <td>
+                  <div id="ldate5"></div>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <script type="text/JavaScript">
+         var updatelocale = function() {
+            var a = moment.locale(document.getElementById("locale").value);
+            var k = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+            var k1 = moment().format("LLLL");
+            var k2 = moment().format();
+            var k3 = moment().calendar();
+            var k4 = moment.months();
+            var k5 = moment.weekdays();
+            document.getElementById("localeid").innerHTML = "<b>"+a+"</b>";
+            document.getElementById("ldate").innerHTML = k;
+            document.getElementById("ldate1").innerHTML = k1;
+            document.getElementById("ldate2").innerHTML = k2;
+            document.getElementById("ldate3").innerHTML = k3;
+            document.getElementById("ldate4").innerHTML = k4;
+            document.getElementById("ldate5").innerHTML = k5;
+         };
+         updatelocale();
+      </script>
+   </body>
+</html>
