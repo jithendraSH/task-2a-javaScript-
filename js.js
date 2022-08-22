@@ -1,10 +1,10 @@
-var marksCanvas = document.getElementById("compchart");
+var compCanvas = document.getElementById("compchart");
 
 Chart.defaults.font.family = "Lato";
 Chart.defaults.font.size = 20;
 Chart.defaults.color = "black";
 
-var marksData = {
+var compData = {
   labels: ["Processor","RAM","Display","Screen size","Camera","Battery","Connectivity"],
   datasets: [
     {
@@ -52,8 +52,8 @@ var chartOptions = {
   }
 };
 
-var radarChart = new Chart(marksCanvas, {
+var radarChart = new Chart(compCanvas, {
   type: "radar",
-  data: marksData,
+  data: compData,
   options: chartOptions
 });
