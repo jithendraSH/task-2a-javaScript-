@@ -74,10 +74,18 @@
           let fd = new FormData(myForm);
 
           for (let key of fd.keys()) {
-            var obj =JSON.stringify(fd.get(key));
-            console.log(obj)
+            console.log(key, fd.get(key))
           }
+          function convertFD2JSON(formData) {
+        let obj = {};
+        for (let key of formData.keys()) {
+          obj[key] = formData.get(key);
         }
+        return JSON.stringify(obj);
+    }
+          let json = convertFD2JSON(fd);
+          console.log(json)
+          }
       </script>
 </body>
 </html>
