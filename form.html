@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="heading">MUSIC CONCERT REGISTRATION</div>
-        <form name="RegForm" action="#" method="get">
+        <form action="#" id="myForm";>
             <div class="circal-form">
                 <div class="circal-title">
                     <label for="pre">PREFIX:</label>
@@ -56,11 +56,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="button">
-                    <input id="btn" type="submit" value="Register">
-                </div>
+                <div class="formBox">
+                    <button id="btnSubmit">Send</button>
+                  </div>
             </div>
         </form>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          document
+            .getElementById('myForm')
+            .addEventListener('submit', handleForm);
+        });
+        function handleForm(ev) {
+          ev.preventDefault();
+          let myForm = ev.target;
+          let fd = new FormData(myForm);
+
+          for (let key of fd.keys()) {
+            var obj =JSON.stringify(fd.get(key));
+            console.log(obj)
+          }
+        }
+      </script>
 </body>
 </html>
