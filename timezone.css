@@ -1,18 +1,23 @@
-.nav {
-    margin-left: 400px;
-}
-
 body {
-    background-image: url("timebg.jpg");
-    background-size: cover;
-    text-align: center;
-    margin-top: 400px;
-    font-size: x-large;
-
+    background-color: #141E30;
+    background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui;
+  font-size: min(200%, 5vmin);
 }
 
-#t1 {
-    width: 350px;
-    height: 40px;
-    text-size-adjust: 7px;
+#textb {
+    font-family: "Dank Mono", ui-monospace, monospace;
+}
+#vis{
+    font-family: "Dank Mono", ui-monospace, monospace;
+}
+
+html {
+    block-size: 100%;
+    inline-size: 100%;
 }

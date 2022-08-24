@@ -2,23 +2,21 @@
 
 <head class="nav">
     <link rel="stylesheet" href="timezone.css" />
-    <h1>Countries Timezone</h1>
+    <h1>Timezone for various Countries</h1>
 
 </head>
 
 <body>
-
-    <span id="ct">TimeZone here</span><br>
-
     <form name="f1">
-        <select name="tz" id="t1" onChange="display_TZ()"></select>
+        <select name="tz" id="textb" onChange="display_TZ()"></select><br><br>
+        <span id="vis"></span><br>
     </form>
     <script>
         function display_TZ() {
 
             tz = f1.tz.options[f1.tz.options.selectedIndex].value
             str = new Date().toLocaleString("en-NZ", { timeZone: tz, timeZoneName: "short" })
-            document.getElementById('ct').innerHTML = str + "," + tz
+            document.getElementById('vis').innerHTML = str + "," + tz
             display_c()
         }
         function display_c() {
