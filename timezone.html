@@ -17,6 +17,11 @@
             tz = f1.tz.options[f1.tz.options.selectedIndex].value
             str = new Date().toLocaleString("en-NZ", { timeZone: tz, timeZoneName: "short" })
             document.getElementById('vis').innerHTML = str + "," + tz
+            const local_ms = local_d.getTime()
+            const remote_ms = (new Date(remote_str)).getTime()
+            const local_remote_offset = Math.round((local_ms - remote_ms) / (60 * 1000))
+            const local_offset = new Date().getTimezoneOffset()
+            return local_remote_offset + local_offset
             display_c()
         }
         function display_c() {
