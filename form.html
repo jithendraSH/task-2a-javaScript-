@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="formBox">
-                    <button id="btnSubmit" onclick="formValidation()">Send</button>
+                    <button id="btnSubmit" onclick="formValidation()">SEND</button>
                   </div>
             </div>
         </form>
@@ -81,7 +81,7 @@
         for (let key of formData.keys()) {
           obj[key] = formData.get(key);
         }
-        return JSON.stringify(obj);
+        return {obj};
     }
           let json = jsoncovert(fd);
           console.log(json)
