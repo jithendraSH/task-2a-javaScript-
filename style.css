@@ -11,19 +11,21 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(image.png);
-    padding: 10px;
+    padding: 80px;
+    background-image: url(danny-howe-bn-D2bCvpik-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 2500px 1500px;
 }
 .container{
-    max-width: 800px;
-    width: 150%;
+    width: 40%;
+    height: 70%;
     padding: 25px 30px;
-    border-radius: 25px;
-    background: linear-gradient(500deg,rgb(13, 13, 13) 20%,rgba(60, 58, 58, 0.563) 74%);
+    border-radius:50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.931)10% ,rgba(169, 169, 169, 0.629) );
 }
 .container .heading{
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
     position: relative;
     text-align: center;
     padding: 0 0 20px 0;
@@ -35,7 +37,7 @@ form .card-details .card-box{
 .card-details .card-box .details{
     display: block;
     font-weight: 500;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     
 }
 .card-details .card-box input{
@@ -44,19 +46,19 @@ form .card-details .card-box{
     outline: none;
     border-radius: 5px;
     border: 1px solid #3c363688;
-    padding-left: 15px;
+    padding-left: 5px;
     border-bottom-width: 2px;
     transition: all 0.3s ease;
-    background: #cac0c088
+    background: #f4ebeb88
 
 }
 .card-details .card-box input:focus,
 .card-details .card-box input:valid{
-    border-color: #3d3c3c88;
+    border-color: #221c1c88;
 }
 form .circal-form .circal-title{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     border-bottom: 5px;
 }
 form .button{
@@ -70,10 +72,10 @@ form .button input{
     outline: none;
     color: rgb(17, 17, 17);
     border: none;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 500;
     border-radius:5px;
-    letter-spacing: 1px;
+    letter-spacing: 10px;
     background: #eee4e488;
 }
 textarea{
@@ -86,14 +88,15 @@ textarea{
   background-color: #f5f1f188;
   font-size: 16px;
   resize: static;
+
 }
 form select{
     color: rgb(8, 8, 8);
-    background-color: #d5c8c888;
+    background-color: #d0c3c388;
 }
 #btnSubmit{
     position: fixed;
-    top: 90%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -104,10 +107,10 @@ form select{
     height: 40px;
     line-height: 40px;
     font-size: 18px;
-    font-family: sans-serif;
+    font-family: Georgia, "Avenir Next", Calibri, Verdana, sans-serif;;
     text-decoration: none;
-    color: #29262688;
-    border: 2px solid rgb(220, 213, 213);
+    color: #000000;
+    border: 2px solid rgba(11, 11, 11, 0.938);
     letter-spacing: 2px;
     position: relative;
     transition: all .35s;
@@ -125,12 +128,12 @@ form select{
     left: 0;
     width: 0;
     height: 100%;
-    background: #0a060688;
-    transition: all .35s;
+    background: #0000007b;
+    transition: all .50s;
   }
   
   a:hover{
-    color: #fff;
+    color: rgb(18, 18, 18);
   }
   
   a:hover:after{
