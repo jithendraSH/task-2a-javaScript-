@@ -11,7 +11,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	background-color: #05e8ba;
-	background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
+	background-image: linear-gradient(315deg, #f57676 0%, #12161a 74%);
 }
 
 .noselect {
@@ -28,20 +28,19 @@ button {
 	width: 150px;
 	height: 50px;
 	cursor: pointer;
-	font-size: 20px;
-	font-weight: bold;
-	color: black;
-	background: white;
-	border: 2px solid black;
-	box-shadow: 5px 5px 0 black,
-		-5px -5px 0 black,
+	font-size: 15px;
+	color: rgb(234, 217, 217);
+	background: rgb(10, 10, 10);
+	border: 2px solid rgb(245, 244, 244);
+	box-shadow: 5px 5px 0 rgb(204, 0, 0),
+		-5px -5px 0 rgb(25, 24, 24),
 		-5px 5px 0 black,
 		5px -5px 0 black;
 	transition: 500ms ease-in-out;
 }
 
 button:hover {
-	box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+	box-shadow: 20px 5px 0 rgb(227, 59, 59), -20px -5px 0 rgb(18, 22, 23);
 }
 
 button:focus {
