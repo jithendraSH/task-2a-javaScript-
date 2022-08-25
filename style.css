@@ -85,7 +85,7 @@ textarea{
   box-sizing: border-box;
   border: 2px solid rgb(99, 97, 97);
   border-radius: 4px;
-  background-color: #f5f1f188;
+  background-color: #5b555588;
   font-size: 16px;
   resize: static;
 
@@ -99,6 +99,7 @@ form select{
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius:50px;
   }
   
   a{
@@ -110,15 +111,16 @@ form select{
     font-family: Georgia, "Avenir Next", Calibri, Verdana, sans-serif;;
     text-decoration: none;
     color: #000000;
-    border: 2px solid rgba(11, 11, 11, 0.938);
     letter-spacing: 2px;
     position: relative;
     transition: all .35s;
+    border-radius:50px;
   }
   
   a span{
     position: relative;
     z-index: 2;
+    border-radius:50px;
   }
   
   a:after{
@@ -128,16 +130,19 @@ form select{
     left: 0;
     width: 0;
     height: 100%;
-    background: #0000007b;
+    background: #333131;
     transition: all .50s;
+    border-radius:50px;
   }
   
   a:hover{
     color: rgb(18, 18, 18);
+    border-radius:50px;
   }
   
   a:hover:after{
     width: 100%;
+    border-radius:50px;
   }
 
 
