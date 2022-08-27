@@ -17,8 +17,8 @@ body{
   background-size: 2500px 1500px;
 }
 .container{
-    width: 40%;
-    height: 70%;
+    width: 50%;
+    height: 100%;
     padding: 25px 30px;
     border-radius:50px;
     background: linear-gradient(rgba(0, 0, 0, 0.931)10% ,rgba(169, 169, 169, 0.629) );
@@ -96,7 +96,7 @@ form select{
 }
 #btnSubmit{
     position: fixed;
-    top: 85%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius:50px;
