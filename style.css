@@ -99,7 +99,7 @@ form select{
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius:50px;
+
   }
   
   a{
@@ -114,13 +114,11 @@ form select{
     letter-spacing: 2px;
     position: relative;
     transition: all .35s;
-    border-radius:50px;
   }
   
   a span{
     position: relative;
     z-index: 2;
-    border-radius:50px;
   }
   
   a:after{
@@ -132,17 +130,14 @@ form select{
     height: 100%;
     background: #333131;
     transition: all .50s;
-    border-radius:50px;
   }
   
   a:hover{
     color: rgb(18, 18, 18);
-    border-radius:50px;
   }
   
   a:hover:after{
     width: 100%;
-    border-radius:50px;
   }
 
 

@@ -45,12 +45,12 @@ function ValidateEmail(empemail) {
 }
 
 function emprole(erole) {
-    var letters =[0-9];
-    if (role.value.match(letters)) {
+    var numbers =(/^[0-9]+$/);
+    if (role.value.match(numbers)) {
         return true;
     }
     else {
-        alert('Role should not be empty');
+        alert('phone no should not be empty');
         role.focus();
         return false;
     }
